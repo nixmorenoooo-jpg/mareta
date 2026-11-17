@@ -3,7 +3,7 @@
 Tienda de ropa urbana hecha con React y Vite, con una API propia en Express.
 Proyecto académico, inspirado en la marca Mareta.
 
-**Equipo:** Danna Stephanía Gonzalez y Laura Sofia Barrera
+**Equipo:** Danna Stephania González y Laura Sofia Barrera Moreno
 
 ## Enlaces
 
