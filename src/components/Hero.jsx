@@ -1,54 +1,27 @@
 function Hero() {
-  const categories = [
-    "Camisetas",
-    "Sets",
-    "Tops y Bodies",
-    "Pantalones/Jeans",
-    "Buzos y Chaquetas",
-    "Camisillas",
-    "Sudaderas",
-  ];
-
-  const sides = [
-    { label: "MUJER", bg: "bg-[#D13B20]", text: "text-white", position: "left-12" },
-    { label: "HOMBRE", bg: "bg-[#E2DED6]", text: "text-black", position: "right-12" },
-  ];
-
   return (
-    <section>
-      {/* Franja blanca de categorías */}
-      <ul className="hidden md:flex justify-between px-10 py-3 text-xs bg-white border-b border-gray-200">
-        {categories.map((category) => (
-          <li key={category}>
-            <a href="#" className="hover:underline">{category}</a>
-          </li>
-        ))}
-      </ul>
-
-      {/* Banner */}
-      <div className="relative">
-        <div className="grid grid-cols-2 h-[420px] md:h-[calc(100vh-150px)] overflow-hidden">
-          {sides.map((side) => (
-            <div key={side.label} className={`relative overflow-hidden ${side.bg}`}>
-              <a
-                href="#"
-                className={`absolute bottom-10 ${side.position} ${side.text} text-xl tracking-wide hover:underline`}
-              >
-                {side.label} →
-              </a>
-            </div>
-          ))}
-        </div>
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-          <div className="bg-black text-white px-6 py-4 text-center">
-            <h1 className="text-3xl md:text-6xl font-bold italic tracking-widest">
-              MARETA
-            </h1>
-            <p className="tracking-[0.3em] mt-2 text-xs md:text-base">
-              HECHA PARA LA CALLE
-            </p>
-          </div>
+    <section id="inicio" className="bg-negro text-hueso py-14 md:py-24">
+      <div className="w-[92%] max-w-[1200px] mx-auto">
+        <h1 className="titulo text-rojo text-[22vw] md:text-[10rem] mb-3">
+          MARETA
+        </h1>
+        <h2 className="titulo text-4xl md:text-6xl mb-5">
+          Hecha para la calle.
+        </h2>
+        <p className="max-w-md text-hueso/75 mb-7">
+          Streetwear urbano para quienes no piden permiso. Piezas atrevidas,
+          cortes amplios y actitud de sobra.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <a href="#tienda" className="btn-rojo">
+            Ver tienda
+          </a>
+          <a
+            href="#clima"
+            className="inline-block border-2 border-hueso px-7 py-3.5 font-bold italic uppercase tracking-wide hover:bg-hueso hover:text-negro transition-colors"
+          >
+            ¿Qué me pongo hoy?
+          </a>
         </div>
       </div>
     </section>

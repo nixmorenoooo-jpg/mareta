@@ -1,15 +1,21 @@
 import { FaWhatsapp } from "react-icons/fa6";
 
+// Cambia el número por el tuyo (con indicativo, sin + ni espacios)
+const NUMERO = "573000000000";
+const MENSAJE = "Hola MARETA, quiero más información";
+
 function WhatsAppButton() {
+  const url = `https://wa.me/${NUMERO}?text=${encodeURIComponent(MENSAJE)}`;
+
   return (
     <a
-      href="https://wa.me/573046311009"
+      href={url}
       target="_blank"
       rel="noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg"
-      aria-label="Escribir por WhatsApp"
+      aria-label="Escríbenos por WhatsApp"
+      className="fixed right-4 bottom-4 z-50 grid place-items-center w-14 h-14 rounded-full bg-[#25d366] text-white text-3xl shadow-lg"
     >
-      <FaWhatsapp size={28} />
+      <FaWhatsapp />
     </a>
   );
 }
