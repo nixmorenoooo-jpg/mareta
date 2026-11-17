@@ -1,8 +1,4 @@
-// Tarjeta genérica y reutilizable.
-// Props:
-//   producto  -> { id, nombre, precio, categoria, imagen, descripcion, tallas }
-//   onAgregar -> (opcional) función; si se pasa, aparece el botón "Agregar"
-//                (Persona B la usa para el carrito)
+
 function ProductCard({ producto, onAgregar }) {
   const { nombre, precio, categoria, imagen, descripcion, tallas = [] } = producto;
 
@@ -15,7 +11,7 @@ function ProductCard({ producto, onAgregar }) {
           className="w-full aspect-[3/4] object-cover"
         />
       ) : (
-        // Sin foto: bloque de marca con la inicial de la categoría
+       
         <div className="w-full aspect-[3/4] bg-negro text-rojo grid place-items-center">
           <span className="titulo text-8xl">
             {categoria?.charAt(0) ?? "M"}

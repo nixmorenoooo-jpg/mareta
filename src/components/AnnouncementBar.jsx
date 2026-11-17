@@ -6,7 +6,7 @@ const MENSAJES = [
 ];
 
 function AnnouncementBar() {
-  // El contenido se repite dos veces para que el marquee no tenga saltos
+
   const fila = [...MENSAJES, ...MENSAJES];
 
   return (

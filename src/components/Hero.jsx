@@ -23,6 +23,11 @@ function Hero() {
             ¿Qué me pongo hoy?
           </a>
         </div>
+        <img
+          src="/banner-mareta.svg"
+          alt="Banner de Mareta"
+          className="w-full mt-10 border-2 border-hueso"
+        />
       </div>
     </section>
   );
