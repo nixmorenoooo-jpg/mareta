@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import Buscador from "./Buscador";
 import Carrito from "./Carrito";
+import Divisas from "./Divisas";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
 
@@ -85,8 +86,9 @@ function ProductList() {
         ))}
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 flex flex-col gap-10">
         <Carrito items={items} onQuitar={quitarDelCarrito} />
+        <Divisas />
       </div>
     </section>
   );
