@@ -6,17 +6,16 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
-// Catálogo de MARETA (precios en COP). Sin fotos por ahora:
-// el campo "imagen" queda en null y la tarjeta muestra un bloque de marca.
+// Catálogo de MARETA (precios en COP). Las fotos viven en public/productos/.
 const productos = [
-  { id: 1, nombre: "Camiseta Oversize Calle", precio: 95000, categoria: "camisetas", imagen: null, descripcion: "Algodón pesado, corte amplio y logo en el pecho.", tallas: ["S", "M", "L", "XL"] },
-  { id: 2, nombre: "Camiseta Mareta Roja", precio: 99000, categoria: "camisetas", imagen: null, descripcion: "Rojo intenso con estampado en la espalda.", tallas: ["S", "M", "L"] },
-  { id: 3, nombre: "Hoodie Negro Mareta", precio: 189000, categoria: "buzos", imagen: null, descripcion: "Capota doble, bolsillo canguro y felpa interna.", tallas: ["S", "M", "L", "XL"] },
-  { id: 4, nombre: "Buzo Crewneck Hueso", precio: 169000, categoria: "buzos", imagen: null, descripcion: "Cuello redondo, color hueso y bordado rojo.", tallas: ["M", "L", "XL"] },
-  { id: 5, nombre: "Jogger Cargo Negro", precio: 175000, categoria: "pantalones", imagen: null, descripcion: "Bolsillos laterales y ajuste elástico en el tobillo.", tallas: ["28", "30", "32", "34"] },
-  { id: 6, nombre: "Jean Wide Leg Washed", precio: 210000, categoria: "pantalones", imagen: null, descripcion: "Pierna ancha, lavado desgastado y tiro alto.", tallas: ["28", "30", "32", "34"] },
-  { id: 7, nombre: "Gorra Mareta Snapback", precio: 69000, categoria: "accesorios", imagen: null, descripcion: "Visera plana, ajustable y bordado frontal.", tallas: ["Única"] },
-  { id: 8, nombre: "Tote Bag Calle", precio: 45000, categoria: "accesorios", imagen: null, descripcion: "Lona resistente con asa larga.", tallas: ["Única"] },
+  { id: 1, nombre: "Camiseta Oversize Calle", precio: 95000, categoria: "camisetas", imagen: "/productos/producto-1.png", descripcion: "Algodón pesado, corte amplio y logo en el pecho.", tallas: ["S", "M", "L", "XL"] },
+  { id: 2, nombre: "Camiseta Mareta Roja", precio: 99000, categoria: "camisetas", imagen: "/productos/producto-2.png", descripcion: "Rojo intenso con estampado en la espalda.", tallas: ["S", "M", "L"] },
+  { id: 3, nombre: "Hoodie Negro Mareta", precio: 189000, categoria: "buzos", imagen: "/productos/producto-3.png", descripcion: "Capota doble, bolsillo canguro y felpa interna.", tallas: ["S", "M", "L", "XL"] },
+  { id: 4, nombre: "Buzo Crewneck Hueso", precio: 169000, categoria: "buzos", imagen: "/productos/producto-4.png", descripcion: "Cuello redondo, color hueso y bordado rojo.", tallas: ["M", "L", "XL"] },
+  { id: 5, nombre: "Jogger Cargo Negro", precio: 175000, categoria: "pantalones", imagen: "/productos/producto-5.png", descripcion: "Bolsillos laterales y ajuste elástico en el tobillo.", tallas: ["28", "30", "32", "34"] },
+  { id: 6, nombre: "Jean Wide Leg Washed", precio: 210000, categoria: "pantalones", imagen: "/productos/producto-6.png", descripcion: "Pierna ancha, lavado desgastado y tiro alto.", tallas: ["28", "30", "32", "34"] },
+  { id: 7, nombre: "Gorra Mareta Snapback", precio: 69000, categoria: "accesorios", imagen: "/productos/producto-7.png", descripcion: "Visera plana, ajustable y bordado frontal.", tallas: ["Única"] },
+  { id: 8, nombre: "Tote Bag Calle", precio: 45000, categoria: "accesorios", imagen: "/productos/producto-8.png", descripcion: "Lona resistente con asa larga.", tallas: ["Única"] },
 ];
 
 app.get("/", (req, res) => {
