@@ -7,9 +7,9 @@ Proyecto académico, inspirado en la marca Mareta.
 
 ## Enlaces
 
-- Página en producción (Vercel): https://mareta-alpha.vercel.app/
+- Página en producción (Vercel): https://mareta-ylj3-c6srz8f7p-nixmorenoooo-jpg.vercel.app/
 - API (Render): https://mareta-9mc2.onrender.com
-- Release v1.0.0 (APK Android): [enlace del release de GitHub]
+- Release v1.0.0 (APK Android): https://github.com/nixmorenoooo-jpg/mareta/releases/tag/v1.0.0
 
 ## Tecnologías
 
