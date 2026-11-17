@@ -2,6 +2,7 @@ import AnnouncementBar from "./components/AnnouncementBar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductList from "./components/ProductList";
+import Clima from "./components/Clima";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <ProductList />
-      {/* Aquí irá la sección del clima (id="clima") */}
+      <Clima />
       <Footer />
       <WhatsAppButton />
     </div>
